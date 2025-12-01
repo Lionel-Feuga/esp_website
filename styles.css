@@ -164,6 +164,7 @@ p, li {
     backdrop-filter: blur(12px);
     padding: 30px 40px;
     margin-bottom: 50px;
+    margin-top: 50px;
     border-radius: 50px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -270,6 +271,28 @@ p, li {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-link:hover {
+    transform: translateY(-5px);
+    color: #10b981;
+}
+
+.contact-link i {
+    transition: color 0.2s ease;
+}
+
+.contact-link:hover i {
+    color: #10b981 !important;
 }
 
 @media (max-width: 1024px) {

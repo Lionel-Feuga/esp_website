@@ -1,189 +1,497 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VR EarthCare - Présentation du Projet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<div class="slide-container banner-slide" id="slide1">
-    <div class="glass-card">
-        <p class="subtitle">Make the Invisible, Visible.</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="slide-container banner-slide" id="slide1">
+      <div class="glass-card">
+        <p
+          class="subtitle"
+          style="
+            font-size: 24px;
+            font-weight: 700;
+            color: #1e293b;
+            margin: 0 0 15px 0;
+          "
+        >
+          Make the Invisible, Visible.
+        </p>
         <div class="tags-container">
-            <span style="background:#065f46; color:#ffffff; padding: 8px 20px; border-radius: 20px; font-weight:600; font-size: 16px;">#GreenTech</span>
-            <span style="background:#1e40af; color:#ffffff; padding: 8px 20px; border-radius: 20px; font-weight:600; font-size: 16px;">#IoT</span>
-            <span style="background:#9d174d; color:#ffffff; padding: 8px 20px; border-radius: 20px; font-weight:600; font-size: 16px;">#VR</span>
+          <span class="tag" style="background: #065f46">#GreenTech</span>
+          <span class="tag" style="background: #1e40af">#IoT</span>
+          <span class="tag" style="background: #9d174d">#VR</span>
         </div>
+      </div>
     </div>
-</div>
 
-<div class="slide-container bleed-image-layout" id="slide2">
-    <div class="content-container">
+    <div class="slide-container bleed-image-layout" id="slide2">
+      <div class="content-container">
         <h2 class="slide-title">La Menace Invisible</h2>
-        <div style="display: flex; flex-direction: column; justify-content: center;">
-            <p style="font-weight: 700; color: #1f2937; font-size: 28px;">"On ne peut combattre ce qu'on ne voit pas."</p>
-            <p>Les données environnementales (CO2, gaspillage énergétique) sont abstraites. Les graphiques ne créent pas d'engagement émotionnel.</p>
-            <p>Citoyens et étudiants peinent à comprendre comment leurs actions individuelles impactent l'environnement global, menant à l'inaction.</p>
+        <div
+          style="display: flex; flex-direction: column; justify-content: center"
+        >
+          <p style="font-weight: 700; color: #1f2937; font-size: 1.2em">
+            "On ne peut combattre ce qu'on ne voit pas."
+          </p>
+          <p>
+            Les données environnementales (CO2, gaspillage énergétique) sont
+            abstraites. Les graphiques ne créent pas d'engagement émotionnel.
+          </p>
+          <p>
+            Citoyens et étudiants peinent à comprendre comment leurs actions
+            individuelles impactent l'environnement global.
+          </p>
         </div>
+      </div>
+      <div class="image-container">
+        <img
+          class="bleed-image-side"
+          src="menace_invisible.jpg"
+          alt="Pollution en ville"
+        />
+      </div>
     </div>
-    <div class="image-container">
-        <img class="bleed-image-side" src="menace_invisible.jpg" alt="Pollution et smog en ville">
-    </div>
-</div>
 
-<div class="slide-container" id="slide3">
-    <h2 class="slide-title">La Solution : Jumeau Numérique + IoT</h2>
-    <div class="content-area">
+    <div class="slide-container" id="slide3">
+      <h2 class="slide-title">La Solution : Jumeau Numérique + IoT</h2>
+      <div class="content-area">
         <div class="two-column">
-            <div>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 30px;">
-                        <i class="fa-solid fa-check-circle" style="color: #10b981; margin-right: 10px;"></i>
-                        <strong>Connexion Temps Réel :</strong> Nous connectons une ville virtuelle à des capteurs réels.
-                    </li>
-                    <li style="margin-bottom: 30px;">
-                        <i class="fa-solid fa-check-circle" style="color: #10b981; margin-right: 10px;"></i>
-                        <strong>Feedback Immédiat :</strong> La pollution devient un brouillard visible. L'énergie devient un flux lumineux.
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-check-circle" style="color: #10b981; margin-right: 10px;"></i>
-                        <strong>Action Gamifiée :</strong> Testez des scénarios (ex: "Planter 50 arbres") et voyez le monde guérir instantanément.
-                    </li>
-                </ul>
-            </div>
-            <div style="height: 400px; border-radius: 16px; overflow: hidden;">
-                <img src="solution_vr.jpg" style="width:100%; height:100%; object-fit: cover;" alt="Utilisateur avec casque VR">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="slide-container" id="slide4">
-    <h2 class="slide-title">Pourquoi c'est Innovant ?</h2>
-    <div class="content-area">
-        <div class="tiled-content">
-            <div class="tile">
-                <div class="icon"><i class="fa-solid fa-vr-cardboard"></i></div>
-                <h3>Éducation Immersive</h3>
-                <p>Au-delà des manuels. La VR crée de l'empathie en plaçant l'utilisateur *au cœur* de l'écosystème.</p>
-            </div>
-            <div class="tile">
-                <div class="icon"><i class="fa-solid fa-wifi"></i></div>
-                <h3>Données Réelles</h3>
-                <p>Contrairement aux jeux classiques, l'environnement réagit aux flux MQTT réels venant de capteurs physiques.</p>
-            </div>
-            <div class="tile">
-                <div class="icon"><i class="fa-solid fa-users"></i></div>
-                <h3>Ateliers Citoyens</h3>
-                <p>Conçu pour des sessions locales multijoueurs (Musées, Écoles) avec un objectif d'impact commun.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="slide-container" id="slide5">
-    <h2 class="slide-title">Architecture Technique (WBS)</h2>
-    <div class="two-column">
-        <div>
-        <div style="margin-bottom: 20px;">
-                <h3 style="color: #2563eb; font-size: 24px;">1. Client VR (Unity 3D)</h3>
-                <p style="font-size: 18px; margin-left: 20px;">Intégration Oculus, Assets Low-poly, Shaders Personnalisés.</p>
-        </div>
-        <div style="margin-bottom: 20px;">
-                <h3 style="color: #059669; font-size: 24px;">2. Hardware & IoT</h3>
-                <p style="font-size: 18px; margin-left: 20px;">Passerelle Raspberry Pi, Capteurs CO2, Contrôleurs Arduino.</p>
-        </div>
-        <div style="margin-bottom: 20px;">
-                <h3 style="color: #7c3aed; font-size: 24px;">3. Simulation Backend</h3>
-                <p style="font-size: 18px; margin-left: 20px;">API Node.js, Websockets Temps Réel, Gestion de Session.</p>
-        </div>
-        </div>
-        <div style="height: 400px; border-radius: 16px; overflow: hidden; position: relative;">
-            <img src="iot_architecture.jpg" style="width:100%; height:100%; object-fit: cover;" alt="Composants IoT">
-            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.6); color: white; padding: 10px; text-align: center;">
-                Défi Full Stack : Du Hardware au Software
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="slide-container" id="slide6">
-    <h2 class="slide-title">Feuille de Route</h2>
-    <div class="content-area">
-        <div class="timeline-layout">
-            <div class="timeline-line"></div>
-            <div class="timeline-item">
-                <h3>Phase 1</h3>
-                <p>Idéation & Recrutement<br><strong>(Statut Actuel)</strong></p>
-            </div>
-            <div class="timeline-item">
-                <h3>Phase 2</h3>
-                <p>POC Hardware<br>Connexion Capteur -> Unity</p>
-            </div>
-            <div class="timeline-item">
-                <h3>Phase 3</h3>
-                <p>Développement MVP<br>Première Ville Jouable</p>
-            </div>
-            <div class="timeline-item">
-                <h3>Phase 4</h3>
-                <p>Atelier Public<br>Démo Live à l'École</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="slide-container" id="slide7">
-    <h2 class="slide-title">On a besoin de vous !</h2>
-    <div class="two-column">
-        <div class="highlight-box">
-            <h2>2 + 5 = 7</h2>
-            <p><strong>Duo cherche sa Dream Team</strong></p>
-            <p style="font-size: 18px; margin-top: 20px;">On a la vision, le plan est prêt, il manque juste votre talent.</p>
-        </div>
-        <div>
-            <h3 style="margin-bottom: 20px;">Le profil idéal ?</h3>
-            <ul style="font-size: 20px; list-style: none; padding-left: 0;">
-                <li style="margin-bottom: 15px;"><i class="fa-solid fa-gamepad" style="color:#db2777; margin-right: 10px;"></i> Tu veux jouer avec <strong>Unity</strong> & la <strong>VR</strong> ?</li>
-                <li style="margin-bottom: 15px;"><i class="fa-solid fa-bolt" style="color:#ca8a04; margin-right: 10px;"></i> Tu aimes quand ça clignote (<strong>IoT/Arduino</strong>) ?</li>
-                <li style="margin-bottom: 15px;"><i class="fa-solid fa-code" style="color:#2563eb; margin-right: 10px;"></i> Tu veux coder pour du <strong>concret</strong> ?</li>
+          <div>
+            <ul style="list-style: none; padding: 0">
+              <li style="margin-bottom: 20px">
+                <i
+                  class="fa-solid fa-check-circle"
+                  style="color: #10b981; margin-right: 10px"
+                ></i>
+                <strong>Connexion Temps Réel :</strong> Ville virtuelle
+                connectée à des capteurs réels.
+              </li>
+              <li style="margin-bottom: 20px">
+                <i
+                  class="fa-solid fa-check-circle"
+                  style="color: #10b981; margin-right: 10px"
+                ></i>
+                <strong>Feedback Immédiat :</strong> La pollution devient un
+                brouillard visible.
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-check-circle"
+                  style="color: #10b981; margin-right: 10px"
+                ></i>
+                <strong>Action Gamifiée :</strong> Plantez des arbres virtuels,
+                voyez l'air s'éclaircir.
+              </li>
             </ul>
-            <div style="margin-top: 30px; padding: 20px; background: #f0fdf4; border-radius: 12px; border: 1px dashed #10b981;">
-                <p style="margin: 0; font-size: 18px; color: #065f46;"><strong>Ambiance :</strong> Pas de pression inutile, on est là pour apprendre et sortir un projet stylé. 😎</p>
-            </div>
+          </div>
+          <div
+            style="
+              border-radius: 16px;
+              overflow: hidden;
+              height: 100%;
+              min-height: 250px;
+            "
+          >
+            <img
+              src="solution_vr.jpg"
+              style="width: 100%; height: 100%; object-fit: cover"
+              alt="Expérience VR"
+            />
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<div class="slide-container" id="slide8">
-    <div class="content-area" style="align-items: center;">
+    <div class="slide-container" id="slide4">
+      <h2 class="slide-title">Pourquoi c'est Innovant ?</h2>
+      <div class="content-area">
+        <div class="tiled-content">
+          <div class="tile">
+            <div class="icon"><i class="fa-solid fa-vr-cardboard"></i></div>
+            <h3>Éducation Immersive</h3>
+            <p>
+              Au-delà des manuels. La VR crée de l'empathie en plaçant
+              l'utilisateur *au cœur* de l'écosystème.
+            </p>
+          </div>
+          <div class="tile">
+            <div class="icon"><i class="fa-solid fa-wifi"></i></div>
+            <h3>Données Réelles</h3>
+            <p>
+              L'environnement réagit aux flux MQTT réels, pas à une simulation
+              aléatoire.
+            </p>
+          </div>
+          <div class="tile">
+            <div class="icon"><i class="fa-solid fa-users"></i></div>
+            <h3>Ateliers Citoyens</h3>
+            <p>
+              Conçu pour des sessions multijoueurs (Musées, Écoles) avec un
+              objectif commun.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-container" id="slide5">
+      <h2 class="slide-title">Architecture Technique (WBS)</h2>
+      <div class="two-column">
+        <div>
+          <div style="margin-bottom: 20px">
+            <h3 style="color: #2563eb; font-size: 1.3em">
+              1. Client VR (Unity 3D)
+            </h3>
+            <p style="margin-left: 20px">
+              Intégration Oculus, Assets Low-poly, Shaders Personnalisés.
+            </p>
+          </div>
+          <div style="margin-bottom: 20px">
+            <h3 style="color: #059669; font-size: 1.3em">2. Hardware & IoT</h3>
+            <p style="margin-left: 20px">
+              Raspberry Pi, Capteurs CO2, Arduino.
+            </p>
+          </div>
+          <div style="margin-bottom: 20px">
+            <h3 style="color: #7c3aed; font-size: 1.3em">
+              3. Simulation Backend
+            </h3>
+            <p style="margin-left: 20px">
+              API Node.js, Websockets, Gestion de Session.
+            </p>
+          </div>
+        </div>
+        <div
+          style="
+            border-radius: 16px;
+            overflow: hidden;
+            height: 100%;
+            min-height: 250px;
+            position: relative;
+          "
+        >
+          <img
+            src="iot_architecture.jpg"
+            style="width: 100%; height: 100%; object-fit: cover"
+            alt="IoT Setup"
+          />
+          <div
+            style="
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background: rgba(0, 0, 0, 0.7);
+              color: white;
+              padding: 10px;
+              text-align: center;
+            "
+          >
+            Challenge Full Stack
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-container" id="slide6">
+      <h2 class="slide-title">Feuille de Route</h2>
+      <div class="content-area">
+        <div class="timeline-layout">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item">
+            <div
+              class="timeline-marker"
+              style="
+                background-color: #2563eb;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                margin: 0 auto 20px;
+                box-shadow: 0 0 0 5px #ffffff;
+              "
+            >
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <div
+              class="timeline-content"
+              style="
+                background: white;
+                padding: 20px;
+                border-radius: 16px;
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                border: 1px solid #f1f5f9;
+                width: 100%;
+              "
+            >
+              <h3 style="color: #2563eb; font-size: 18px; margin-bottom: 5px">
+                Phase 1
+              </h3>
+              <p style="font-size: 14px; color: #64748b; margin: 0">
+                Idéation & Team
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div
+              class="timeline-marker"
+              style="
+                background-color: #059669;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                margin: 0 auto 20px;
+                box-shadow: 0 0 0 5px #ffffff;
+              "
+            >
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <div
+              class="timeline-content"
+              style="
+                background: white;
+                padding: 20px;
+                border-radius: 16px;
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                border: 1px solid #f1f5f9;
+                width: 100%;
+              "
+            >
+              <h3 style="color: #059669; font-size: 18px; margin-bottom: 5px">
+                Phase 2
+              </h3>
+              <p style="font-size: 14px; color: #64748b; margin: 0">
+                POC Hardware
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div
+              class="timeline-marker"
+              style="
+                background-color: #ca8a04;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                margin: 0 auto 20px;
+                box-shadow: 0 0 0 5px #ffffff;
+              "
+            >
+              <i class="fa-solid fa-city"></i>
+            </div>
+            <div
+              class="timeline-content"
+              style="
+                background: white;
+                padding: 20px;
+                border-radius: 16px;
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                border: 1px solid #f1f5f9;
+                width: 100%;
+              "
+            >
+              <h3 style="color: #ca8a04; font-size: 18px; margin-bottom: 5px">
+                Phase 3
+              </h3>
+              <p style="font-size: 14px; color: #64748b; margin: 0">
+                Développement MVP
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div
+              class="timeline-marker"
+              style="
+                background-color: #db2777;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                margin: 0 auto 20px;
+                box-shadow: 0 0 0 5px #ffffff;
+              "
+            >
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div
+              class="timeline-content"
+              style="
+                background: white;
+                padding: 20px;
+                border-radius: 16px;
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                border: 1px solid #f1f5f9;
+                width: 100%;
+              "
+            >
+              <h3 style="color: #db2777; font-size: 18px; margin-bottom: 5px">
+                Phase 4
+              </h3>
+              <p style="font-size: 14px; color: #64748b; margin: 0">
+                Atelier Public
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-container" id="slide7">
+      <h2 class="slide-title">On a besoin de vous !</h2>
+      <div class="two-column">
+        <div class="highlight-box">
+          <h2 style="font-size: clamp(40px, 5vw, 80px)">2 + 5 = 7</h2>
+          <p><strong>Duo cherche sa Dream Team</strong></p>
+          <p style="margin-top: 20px; font-weight: 600">
+            On a la vision, le plan est prêt, il manque juste votre talent.
+          </p>
+        </div>
+        <div>
+          <h3 style="margin-bottom: 20px">Le profil idéal ?</h3>
+          <ul style="list-style: none; padding-left: 0">
+            <li style="margin-bottom: 15px">
+              <i
+                class="fa-solid fa-gamepad"
+                style="color: #db2777; margin-right: 10px"
+              ></i>
+              Tu veux jouer avec <strong>Unity</strong> & la
+              <strong>VR</strong> ?
+            </li>
+            <li style="margin-bottom: 15px">
+              <i
+                class="fa-solid fa-bolt"
+                style="color: #ca8a04; margin-right: 10px"
+              ></i>
+              Tu aimes quand ça clignote (<strong>IoT</strong>) ?
+            </li>
+            <li style="margin-bottom: 15px">
+              <i
+                class="fa-solid fa-code"
+                style="color: #2563eb; margin-right: 10px"
+              ></i>
+              Tu veux coder pour du <strong>concret</strong> ?
+            </li>
+          </ul>
+          <div
+            style="
+              margin-top: 30px;
+              padding: 20px;
+              background: #f0fdf4;
+              border-radius: 12px;
+              border: 1px dashed #10b981;
+            "
+          >
+            <p style="margin: 0; color: #065f46">
+              <strong>Ambiance :</strong> Pas de pression inutile, on est là
+              pour apprendre et sortir un projet stylé. 😎
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-container" id="slide8">
+      <div class="content-area">
         <div class="contact-card">
-            <h2 style="font-size: 50px; margin-bottom: 20px;">Rejoignez l'Aventure !</h2>
-            <p>Ne codez pas juste un autre site web. Codez pour la planète.</p>
-            <hr style="border: 0; border-top: 1px solid #cbd5e1; margin: 30px 0; width: 50%; margin-left: auto; margin-right: auto;">
-            
-            <div style="display: flex; gap: 40px; justify-content: center; margin-top: 30px;">
-                <div style="text-align: center;">
-                    <i class="fa-solid fa-envelope" style="font-size: 40px; color: #2563eb; margin-bottom: 15px;"></i>
-                    <p style="font-weight: 700;">lionel.feuga@epitech.eu</p>
-                </div>
-                <div style="text-align: center;">
-                    <i class="fa-brands fa-github" style="font-size: 40px; color: #1f2937; margin-bottom: 15px;"></i>
-                    <p style="font-weight: 700;">github.com/vr-earthcare</p>
-                </div>
-            </div>
-            
-            <div style="margin-top: 40px; text-align: center;">
-                <img src="recrutement.jpg" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" alt="Équipe">
-            </div>
-        </div>
-    </div>
-</div>
+          <h2 style="font-size: clamp(32px, 4vw, 50px); margin-bottom: 20px">
+            Rejoignez l'Aventure !
+          </h2>
+          <p>Ne codez pas juste un autre site web. Codez pour la planète.</p>
+          <hr
+            style="
+              border: 0;
+              border-top: 1px solid #cbd5e1;
+              margin: 30px auto;
+              width: 50%;
+            "
+          />
 
-</body>
+          <div
+            style="
+              display: flex;
+              gap: 40px;
+              justify-content: center;
+              flex-wrap: wrap;
+              margin-top: 30px;
+            "
+          >
+            <div style="text-align: center">
+              <a href="mailto:lionel.feuga@epitech.eu" class="contact-link">
+                <i
+                  class="fa-solid fa-envelope"
+                  style="font-size: 32px; color: #2563eb; margin-bottom: 10px"
+                ></i>
+                <p style="font-weight: 700">lionel.feuga@epitech.eu</p>
+              </a>
+            </div>
+            <div style="text-align: center">
+              <a
+                href="https://github.com/Lionel-Feuga/esp_website/"
+                target="_blank"
+                class="contact-link"
+              >
+                <i
+                  class="fa-brands fa-github"
+                  style="font-size: 32px; color: #1f2937; margin-bottom: 10px"
+                ></i>
+                <p style="font-weight: 700">
+                  github.com/Lionel-Feuga/esp_website
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <div style="margin-top: 40px; text-align: center">
+            <img
+              src="recrutement.jpg"
+              style="
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 50%;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              "
+              alt="Équipe"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
