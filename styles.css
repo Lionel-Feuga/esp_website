@@ -1,0 +1,344 @@
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #dbeafe 0%, #d1fae5 100%);
+    font-family: 'Open Sans', sans-serif;
+    color: #334155;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Outfit', sans-serif;
+    color: #111827;
+}
+
+h1 {
+    font-size: clamp(40px, 5vw, 72px);
+    font-weight: 700;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, #059669 0%, #2563eb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: clamp(32px, 4vw, 56px);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.slide-title {
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 600;
+    color: #064e3b;
+    margin-bottom: 30px;
+    border-left: 6px solid #10b981;
+    padding-left: 20px;
+}
+
+p, li {
+    font-size: clamp(16px, 1.5vw, 22px);
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #4b5563;
+}
+
+.subtitle {
+    font-size: clamp(20px, 3vw, 32px);
+    color: #64748b;
+    font-weight: 300;
+}
+
+.slide-container {
+    background-color: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 1280px;
+    min-height: 600px;
+    height: auto;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+@media (min-width: 1025px) {
+    .slide-container {
+        height: 90vh;
+        max-height: 720px;
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+    .slide-container::-webkit-scrollbar { 
+        display: none;
+    }
+}
+
+.slide-container::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, rgba(255,255,255,0) 70%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.slide-container > * {
+    position: relative;
+    z-index: 1;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    height: 100%;
+    align-items: center;
+}
+
+.bleed-image-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 !important;
+    align-items: stretch;
+}
+
+.bleed-image-layout .content-container {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bleed-image-layout .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+
+.bleed-image-layout img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-slide {
+    padding: 0 !important;
+    background-image: url('banner.png');
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    padding: 30px 40px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    animation: floatUp 1s ease-out;
+    max-width: 90%;
+}
+
+@keyframes floatUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.tags-container {
+    display: flex; 
+    gap: 10px; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tag {
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.timeline-layout {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #e2e8f0;
+    z-index: 0;
+}
+
+.timeline-item {
+    position: relative;
+    z-index: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    width: 23%;
+    text-align: center;
+}
+
+.tiled-content {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.tile {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+    flex: 1;
+}
+
+.tile .icon {
+    font-size: 32px;
+    color: #10b981;
+    margin-bottom: 15px;
+    background: #d1fae5;
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.highlight-box {
+    background: #10b981;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.highlight-box h2 { color: white; margin-bottom: 10px; }
+.highlight-box p { color: #ecfdf5; font-size: 20px; }
+
+.contact-card {
+    background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);
+    border-radius: 24px;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .slide-container {
+        padding: 30px 20px;
+        height: auto;
+        min-height: auto;
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .bleed-image-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px auto;
+    }
+    
+    .bleed-image-layout .content-container {
+        padding: 30px 20px;
+        order: 2;
+    }
+    
+    .bleed-image-layout .image-container {
+        order: 1;
+        min-height: 250px;
+    }
+
+    .tiled-content {
+        flex-direction: column;
+    }
+
+    .timeline-layout {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .timeline-line {
+        width: 4px;
+        height: 100%;
+        left: 20px;
+        top: 0;
+    }
+
+    .timeline-item {
+        width: 100%;
+        margin-left: 40px;
+        text-align: left;
+    }
+
+    .two-column img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+    
+    .contact-card {
+        padding: 20px;
+    }
+    
+    .contact-card .flex-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
